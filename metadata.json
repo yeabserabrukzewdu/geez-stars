@@ -1,0 +1,8 @@
+
+{
+  "name": "Geez Digitals Website",
+  "description": "A modern, animated single-page website for Geez Digitals, a digital marketing agency. The site showcases their services, pricing packages, portfolio, team, and client work, based on their company profile.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
