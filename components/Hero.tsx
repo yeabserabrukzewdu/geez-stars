@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
           muted 
           playsInline 
           className="w-full h-full object-cover opacity-60 scale-110 transition-transform duration-[20s] ease-linear"
-          poster="https://res.cloudinary.com/dlfdjcuat/image/upload/v1770216522/Screenshot_2026-02-04_174807_bg6zbq.png"
+          poster="./header.webp"
         >
           <source 
             src="https://res.cloudinary.com/dlfdjcuat/video/upload/v1770122833/VID_20221228_025231_288_rnb5h6.mp4" 

@@ -1,6 +1,6 @@
 
 import React, { useState, useRef } from 'react';
-import { works, movieWorks, conferenceWorks, musicWorks } from '../constants';
+import { works, movieWorks, conferenceWorks, musicWorks, documentaryWorks } from '../constants';
 import PlayIcon from './icons/PlayIcon';
 
 const getYouTubeId = (url: string) => {
@@ -40,7 +40,7 @@ const VideoCard: React.FC<{
   const revealClass = index % 2 === 0 ? 'reveal-left' : 'reveal-right';
 
   return (
-    <div className={`${revealClass} group relative overflow-hidden rounded-[4rem] ${aspectRatioClass} bg-black shadow-3xl border border-white/5 transition-all duration-700 hover:border-yellow-500/40 perspective-card`}>
+    <div className={`${revealClass} group relative overflow-hidden rounded-[2.5rem] md:rounded-[4rem] ${aspectRatioClass} bg-black shadow-3xl border border-white/5 transition-all duration-700 hover:border-yellow-500/40 perspective-card`}>
       {/* Thumbnail Layer */}
       {!isPlaying && (
         <img 
@@ -76,14 +76,14 @@ const VideoCard: React.FC<{
       {/* Cinematic Gradient / Info Layer */}
       <div className={`absolute inset-0 bg-gradient-to-t from-black via-black/10 to-transparent transition-opacity duration-700 ${isPlaying ? 'opacity-0 pointer-events-none' : 'opacity-80'}`}></div>
 
-      <div className={`absolute inset-x-12 bottom-12 transition-all duration-700 ${isPlaying ? 'translate-y-20 opacity-0 pointer-events-none' : 'translate-y-0 opacity-100'}`}>
-        <span className="text-yellow-500 text-[10px] font-black tracking-[0.4em] uppercase mb-4 px-6 py-2 bg-black/60 backdrop-blur-xl rounded-full w-fit border border-white/10 block">
+      <div className={`absolute inset-x-8 md:inset-x-12 bottom-8 md:bottom-12 transition-all duration-700 ${isPlaying ? 'translate-y-20 opacity-0 pointer-events-none' : 'translate-y-0 opacity-100'}`}>
+        <span className="text-yellow-500 text-[9px] md:text-[10px] font-black tracking-[0.4em] uppercase mb-4 px-5 py-2 md:px-6 md:py-2 bg-black/60 backdrop-blur-xl rounded-full w-fit border border-white/10 block">
           {item.category}
         </span>
-        <h3 className={`${isLandscape ? 'text-5xl' : 'text-4xl'} font-black text-white mb-3 uppercase tracking-tighter leading-none`}>
+        <h3 className={`${isLandscape ? 'text-3xl md:text-5xl' : 'text-2xl md:text-4xl'} font-black text-white mb-3 uppercase tracking-tighter leading-none`}>
           {item.title}
         </h3>
-        <p className="text-gray-400 text-sm font-medium leading-relaxed mb-6 line-clamp-2 max-w-lg">
+        <p className="text-gray-400 text-xs md:text-sm font-medium leading-relaxed mb-6 line-clamp-2 max-w-lg">
           {item.description}
         </p>
       </div>
@@ -92,9 +92,9 @@ const VideoCard: React.FC<{
       {!isPlaying && (
         <button 
           onClick={togglePlay}
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-28 h-28 bg-yellow-500 rounded-full flex items-center justify-center text-black shadow-2xl transition-all duration-700 z-20 group-hover:scale-110"
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 md:w-28 md:h-28 bg-yellow-500 rounded-full flex items-center justify-center text-black shadow-2xl transition-all duration-700 z-20 group-hover:scale-110"
         >
-          <PlayIcon className="w-12 h-12 ml-1" />
+          <PlayIcon className="w-10 h-10 md:w-12 md:h-12 ml-1" />
         </button>
       )}
 
@@ -106,19 +106,19 @@ const VideoCard: React.FC<{
 
 const Works: React.FC = () => {
   return (
-    <section id="works" className="py-48 bg-[#000000] relative overflow-hidden space-y-48">
+    <section id="works" className="py-24 md:py-32 bg-[#000000] relative overflow-hidden space-y-24 md:space-y-32">
       <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-yellow-500/[0.03] blur-[200px] rounded-full pointer-events-none animate-pulse"></div>
 
       {/* SECTION 1: SOCIAL MASTERY (Vertical) */}
       <div className="container mx-auto px-6">
-        <div className="text-center mb-32 reveal">
+        <div className="text-center mb-16 md:mb-24 reveal">
           <span className="text-yellow-500 font-black tracking-[0.5em] uppercase mb-8 block text-xs">The Viral Strategy</span>
-          <h2 className="text-7xl md:text-[10rem] font-black uppercase tracking-tighter leading-none">
+          <h2 className="text-6xl md:text-[10rem] font-black uppercase tracking-tighter leading-none">
             <span className="text-mask"><span>SOCIAL</span></span> <br/>
             <span className="text-mask" style={{ transitionDelay: '0.2s' }}><span className="gradient-text">MASTERY</span></span>
           </h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 max-w-7xl mx-auto">
           {works.map((item, idx) => (
             <VideoCard key={item.id} item={item} index={idx} layout="portrait" />
           ))}
@@ -127,19 +127,19 @@ const Works: React.FC = () => {
 
       {/* SECTION 2: CINEMATIC PRODUCTIONS (Horizontal) */}
       <div className="container mx-auto px-6">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-32 gap-12 reveal">
+        <div className="flex flex-col md:flex-row justify-between items-end mb-16 md:mb-24 gap-8 reveal">
           <div className="max-w-2xl">
-            <span className="text-yellow-500 font-black tracking-[0.5em] uppercase mb-8 block text-xs">Feature Films & Short Movies</span>
-            <h2 className="text-6xl md:text-9xl font-black uppercase tracking-tighter leading-none">
+            <span className="text-yellow-500 font-black tracking-[0.5em] uppercase mb-6 md:mb-8 block text-xs">Feature Films & Short Movies</span>
+            <h2 className="text-5xl md:text-9xl font-black uppercase tracking-tighter leading-none">
               <span className="text-mask"><span>LOCAL</span></span> <br/>
               <span className="text-mask" style={{ transitionDelay: '0.2s' }}><span className="gradient-text">MOVIES</span></span>
             </h2>
           </div>
-          <p className="max-w-md text-gray-500 text-xl font-light italic leading-relaxed text-right">
+          <p className="max-w-md text-gray-500 text-lg md:text-xl font-light italic leading-relaxed md:text-right">
             Redefining Ethiopian cinema with high-end digital workflows.
           </p>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 max-w-7xl mx-auto">
           {movieWorks.map((item, idx) => (
             <VideoCard key={item.id} item={item} index={idx} layout="landscape" />
           ))}
@@ -148,19 +148,19 @@ const Works: React.FC = () => {
 
       {/* SECTION 3: MUSIC CLIPS (Horizontal) */}
       <div className="container mx-auto px-6">
-        <div className="flex flex-col md:flex-row-reverse justify-between items-end mb-32 gap-12 reveal">
-          <div className="max-w-2xl text-right">
-            <span className="text-yellow-500 font-black tracking-[0.5em] uppercase mb-8 block text-xs text-right">Visual Rhythms</span>
-            <h2 className="text-6xl md:text-9xl font-black uppercase tracking-tighter leading-none">
+        <div className="flex flex-col md:flex-row-reverse justify-between items-end mb-16 md:mb-24 gap-8 reveal">
+          <div className="max-w-2xl md:text-right">
+            <span className="text-yellow-500 font-black tracking-[0.5em] uppercase mb-6 md:mb-8 block text-xs md:text-right">Visual Rhythms</span>
+            <h2 className="text-5xl md:text-9xl font-black uppercase tracking-tighter leading-none">
               <span className="text-mask"><span>MUSIC</span></span> <br/>
               <span className="text-mask" style={{ transitionDelay: '0.2s' }}><span className="gradient-text">CLIPS</span></span>
             </h2>
           </div>
-          <p className="max-w-md text-gray-500 text-xl font-light italic leading-relaxed text-left">
+          <p className="max-w-md text-gray-500 text-lg md:text-xl font-light italic leading-relaxed text-left">
             Capturing the pulse of the industry through high-energy visual storytelling.
           </p>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 max-w-7xl mx-auto">
           {musicWorks.map((item, idx) => (
             <VideoCard key={item.id} item={item} index={idx} layout="landscape" />
           ))}
@@ -169,26 +169,47 @@ const Works: React.FC = () => {
 
       {/* SECTION 4: EVENT EXCELLENCE (Horizontal) */}
       <div className="container mx-auto px-6">
-        <div className="text-center mb-32 reveal">
+        <div className="text-center mb-16 md:mb-24 reveal">
           <span className="text-yellow-500 font-black tracking-[0.5em] uppercase mb-8 block text-xs">Continental Summits & Expos</span>
-          <h2 className="text-6xl md:text-9xl font-black uppercase tracking-tighter leading-none">
+          <h2 className="text-5xl md:text-9xl font-black uppercase tracking-tighter leading-none">
             <span className="text-mask"><span>CONFERENCE</span></span> <br/>
             <span className="text-mask" style={{ transitionDelay: '0.2s' }}><span className="gradient-text">PROGRAMS</span></span>
           </h2>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 max-w-7xl mx-auto">
           {conferenceWorks.map((item, idx) => (
             <VideoCard key={item.id} item={item} index={idx} layout="landscape" />
           ))}
         </div>
       </div>
 
+      {/* SECTION 5: DOCUMENTARY MASTERY (Horizontal) */}
+      <div className="container mx-auto px-6">
+        <div className="flex flex-col md:flex-row justify-between items-end mb-16 md:mb-24 gap-8 reveal">
+          <div className="max-w-2xl">
+            <span className="text-yellow-500 font-black tracking-[0.5em] uppercase mb-6 md:mb-8 block text-xs">Authentic Storytelling & Docu-series</span>
+            <h2 className="text-5xl md:text-9xl font-black uppercase tracking-tighter leading-none">
+              <span className="text-mask"><span>DOCU</span></span> <br/>
+              <span className="text-mask" style={{ transitionDelay: '0.2s' }}><span className="gradient-text">MASTERY</span></span>
+            </h2>
+          </div>
+          <p className="max-w-md text-gray-500 text-lg md:text-xl font-light italic leading-relaxed md:text-right">
+            Preserving history and capturing current narratives with uncompromising authenticity.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 max-w-7xl mx-auto">
+          {documentaryWorks.map((item, idx) => (
+            <VideoCard key={item.id} item={item} index={idx} layout="landscape" />
+          ))}
+        </div>
+      </div>
+
       {/* FINAL CTA */}
-      <div className="reveal mt-48 text-center container mx-auto px-6">
-        <div className="glass p-20 rounded-[6rem] border border-white/5 max-w-5xl mx-auto bg-white/[0.01] hover:bg-white/[0.03] transition-all duration-700">
-          <p className="text-gray-400 italic text-3xl leading-relaxed font-light">
+      <div className="reveal py-16 md:py-24 text-center container mx-auto px-6">
+        <div className="glass p-12 md:p-20 rounded-[3rem] md:rounded-[6rem] border border-white/5 max-w-5xl mx-auto bg-white/[0.01] hover:bg-white/[0.03] transition-all duration-700">
+          <p className="text-gray-400 italic text-2xl md:text-3xl leading-relaxed font-light">
             "We maintain absolute discretion for our high-profile clients. <br/>
-            <span className="text-white font-black not-italic uppercase tracking-widest mt-10 block underline decoration-yellow-500/30 underline-offset-8 cursor-pointer hover:text-yellow-500 transition-colors">
+            <span className="text-white font-black not-italic uppercase tracking-widest mt-8 md:mt-10 block underline decoration-yellow-500/30 underline-offset-8 cursor-pointer hover:text-yellow-500 transition-colors">
               Request Access to Secret Vault
             </span>"
           </p>

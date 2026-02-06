@@ -10,7 +10,7 @@ export const navLinks = [
 
 export const pageHeroImages = {
   // THIS IS THE URL YOU ARE LOOKING FOR:
-  stickyBackground: "https://res.cloudinary.com/dlfdjcuat/image/upload/v1770128947/0A3A3071_gg4xgm.webp",
+  stickyBackground: "./sticky.webp",
   
   services: [
     "https://res.cloudinary.com/dlfdjcuat/image/upload/v1770216654/Screenshot_2026-02-04_174947_nbhctv.png",
@@ -60,12 +60,12 @@ export const latestImpact = [
   {
     title: "UN Global Summit",
     tag: "Documentary Mastery",
-    image: "https://res.cloudinary.com/dlfdjcuat/image/upload/v1770212531/0A3A2795_-_Copy_nfjash.webp"
+    image: "./home 3.webp"
   },
   {
     title: "Binance Tech Expo",
     tag: "Event Evolution",
-    image: "https://res.cloudinary.com/dlfdjcuat/image/upload/v1770128947/0A3A3071_gg4xgm.webp"
+    image: "./sticky.webp"
   }
 ];
 
@@ -214,6 +214,25 @@ export const musicWorks = [
   }
 ];
 
+export const documentaryWorks = [
+  {
+    id: 401,
+    title: "The Coffee Origin",
+    category: "Documentary",
+    description: "A deep dive into the heritage of Ethiopian coffee, from wild forests to global cups. High-end visual ethnography.",
+    image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=1200",
+    videoUrl: "https://www.youtube.com/watch?v=vV_X1oK_9gM"
+  },
+  {
+    id: 402,
+    title: "Addis Tomorrow",
+    category: "Urban Docu",
+    description: "Exploring the rapid transformation of Addis Ababa through the eyes of its young visionaries.",
+    image: "https://images.unsplash.com/photo-1523213139764-415255943bbe?auto=format&fit=crop&q=80&w=1200",
+    videoUrl: "https://www.youtube.com/watch?v=O_zG_G9WqWk"
+  }
+];
+
 export const pricingPlans = [
   {
     name: "Growth Starter",
@@ -275,14 +294,14 @@ export const teamMembers = [
 ];
 
 export const clients = [
-  { name: "United Nations", logo: "https://res.cloudinary.com/dlfdjcuat/image/upload/v1770205221/08_z1bjlf.png" },
-  { name: "Binance", logo: "https://res.cloudinary.com/dlfdjcuat/image/upload/v1770205221/07_r5l2mg.png" },
-  { name: "African Union", logo: "https://res.cloudinary.com/dlfdjcuat/image/upload/v1770205221/09_ugblp7.png" },
-  { name: "Ethio Telecom", logo: "https://res.cloudinary.com/dlfdjcuat/image/upload/v1770205221/03_melpvq.png" },
-  { name: "Safaricom", logo: "https://res.cloudinary.com/dlfdjcuat/image/upload/v1770205221/04_wypk09.png" },
-  { name: "Commercial Bank", logo: "https://res.cloudinary.com/dlfdjcuat/image/upload/v1770205220/01_thqy8v.png" },
-  { name: "Berbera Port", logo: "https://res.cloudinary.com/dlfdjcuat/image/upload/v1770205223/12_frmnwf.png" },
-  { name: "Creative Hub", logo: "https://res.cloudinary.com/dlfdjcuat/image/upload/v1770205220/05_snzhyu.png" }
+  { name: "United Nations", logo: "./01.png" },
+  { name: "Binance", logo: "./02.png" },
+  { name: "African Union", logo: "./03.png" },
+  { name: "Ethio Telecom", logo: "./04.png" },
+  { name: "Safaricom", logo: "./05.png" },
+  { name: "Commercial Bank", logo: "./06.png" },
+  { name: "Berbera Port", logo: "./07.png" },
+  { name: "Creative Hub", logo: "./08.png" }
 ];
 
 export const stats = [
