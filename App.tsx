@@ -195,11 +195,11 @@ const AboutPage = () => (
           </div>
           <div className="reveal-right relative">
              <div className="aspect-[4/5] rounded-[2.5rem] md:rounded-[4rem] overflow-hidden shadow-2xl group">
-                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=1200" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[5s]" alt="Geez Studio" />
+                <img src="./about 4.webp" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[5s]" alt="Geez Studio" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
              </div>
              <div className="absolute -bottom-6 -left-6 md:-bottom-10 md:-left-10 glass p-6 md:p-10 rounded-[2rem] md:rounded-[3rem] animate-float">
-                <span className="text-3xl md:text-5xl font-black gradient-text">6+</span>
+                <span className="text-3xl md:text-5xl font-black gradient-text">7+</span>
                 <p className="text-[9px] md:text-[10px] font-black text-gray-500 uppercase tracking-widest mt-2">Years of Excellence</p>
              </div>
           </div>

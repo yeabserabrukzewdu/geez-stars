@@ -33,8 +33,8 @@ const Header: React.FC = () => {
   />
    
    <div className="flex flex-col">
-              <span className="text-xl font-black tracking-tighter leading-none">GEEZ</span>
-              <span className="text-[10px] tracking-[0.3em] font-bold text-yellow-500">DIGITALS</span>
+              <span className="text-xl font-black tracking-tighter leading-none">GEEZ STARS</span>
+              <span className="text-[10px] tracking-[0.3em] font-bold text-yellow-500">CREATIVE STUDIO</span>
             </div>
           </a>
 

@@ -27,8 +27,8 @@ export const pageHeroImages = {
     "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=1920",
   ],
   team: [
-    "https://res.cloudinary.com/dlfdjcuat/image/upload/v1770213075/IMG_20230618_145242_016_qspra1.jpg",
-    "https://res.cloudinary.com/dlfdjcuat/image/upload/v1770213129/IMG_20230618_145308_643_pjxzzd.jpg",
+    "./about 1.webp",
+    "./about 2.webp",
   ],
   contact: [
     "https://res.cloudinary.com/dlfdjcuat/image/upload/v1770213566/0A3A3305_k2uzof.webp",
@@ -41,12 +41,12 @@ export const aboutContent = {
   vision: {
     title: "The Vision",
     description: "To become the definitive global standard for African visual storytelling, where every frame we produce bridges the gap between local cultural richness and international cinematic perfection.",
-    image: "https://res.cloudinary.com/dlfdjcuat/image/upload/v1770213075/IMG_20230618_145242_016_qspra1.jpg"
+    image: "./about 1.webp"
   },
   mission: {
     title: "The Mission",
     description: "Our mission is to empower visionaries and market leaders with strategic visual dominance. We blend cutting-edge technology with deep-rooted storytelling to make our clients' brands impossible to ignore on the global stage.",
-    image: "https://res.cloudinary.com/dlfdjcuat/image/upload/v1770289163/Screenshot_2026-02-05_135850_atrima.png"
+    image: "./about 3.webp"
   },
   philosophy: [
     { title: "Precision", text: "Every pixel, every frame, and every cut is deliberate. We do not settle for 'good enough'." },
@@ -114,7 +114,7 @@ export const works = [
     title: "YUSRA TRAVEL ADS",
     category: "TikTok / Viral",
     description: "Local Tour And Travel Agency edits that captured over 500k views in the first week.",
-    image: "https://res.cloudinary.com/dlfdjcuat/image/upload/v1770207825/Screenshot_2026-02-04_152227_nnthxl.png",
+    image: "./works 3.webp",
     videoUrl: "https://res.cloudinary.com/dlfdjcuat/video/upload/v1770207006/ablex_001.01_jeknfu.mp4"
   },
   {
@@ -122,7 +122,7 @@ export const works = [
     title: "DE POWER COSMIC",
     category: "Reels / COSMEX",
     description: "Well Known Cosmetics industries in Addis, designed for maximum engagement.",
-    image: "https://res.cloudinary.com/dlfdjcuat/image/upload/v1770207825/Screenshot_2026-02-04_152312_nnbdrr.png",
+    image: "./works 2.webp",
     videoUrl: "https://res.cloudinary.com/dlfdjcuat/video/upload/v1770207101/de_power_026.02_nmtiya.mp4"
   },
   {
@@ -130,7 +130,7 @@ export const works = [
   title: "GEEZ JOBS SHOWREEL",
   category: "JOB APPLICATIONS / FREELANCE",
     description: "A showcase of our most successful job application videos and freelance projects.",
-    image: "https://res.cloudinary.com/dlfdjcuat/image/upload/v1770210729/Screenshot_2026-02-04_160714_lq7px8.png",
+    image: "./works 6.webp",
     videoUrl: "https://res.cloudinary.com/dlfdjcuat/video/upload/v1770210601/geez_jobs_005_nobwxd.mp4"
   },
   {
@@ -138,7 +138,7 @@ export const works = [
     title: "WE GLOW SPA",
     category: "Skin care / Massage",
     description: "A relaxing and visually soothing promotional video for a local spa and wellness center.",
-    image: "https://res.cloudinary.com/dlfdjcuat/image/upload/v1770210009/Screenshot_2026-02-04_155947_aso3hg.png",
+    image: "./works 1.webp",
     videoUrl: "https://res.cloudinary.com/dlfdjcuat/video/upload/v1770210106/weglow005.00_uwo7nv.mp4"
   },
   {
@@ -146,7 +146,7 @@ export const works = [
     title: "LE YU HAIR SALON",
     category: "Human hair / TikTok sales",
     description: "A trendy and engaging video to promote hair products on TikTok, driving significant sales.",
-    image: "https://res.cloudinary.com/dlfdjcuat/image/upload/v1770211073/Screenshot_2026-02-04_161539_bs2bhh.png",
+    image: "./works 5.webp",
     videoUrl: "https://res.cloudinary.com/dlfdjcuat/video/upload/v1770210686/leyu_hair_011.01_ifafqs.mp4"
   },
   {
@@ -154,7 +154,7 @@ export const works = [
     title: "KEMESHA BARISTA ACADEMY",
     category: "Coffee / Reels",
     description: "A dynamic promotional video for a barista training academy, highlighting their courses and facilities.",
-    image: "https://res.cloudinary.com/dlfdjcuat/image/upload/v1770211954/Screenshot_2026-02-04_163205_vfawhv.png",
+    image: "./works 4.webp",
     videoUrl: "https://res.cloudinary.com/dlfdjcuat/video/upload/v1770211893/KEMESHA_026.002_douz5a.mp4"
   },
 ];
@@ -225,6 +225,22 @@ export const documentaryWorks = [
   },
   {
     id: 402,
+    title: "Addis Tomorrow",
+    category: "Urban Docu",
+    description: "Exploring the rapid transformation of Addis Ababa through the eyes of its young visionaries.",
+    image: "https://images.unsplash.com/photo-1523213139764-415255943bbe?auto=format&fit=crop&q=80&w=1200",
+    videoUrl: "https://www.youtube.com/watch?v=O_zG_G9WqWk"
+  },
+   {
+    id: 403,
+    title: "Addis Tomorrow",
+    category: "Urban Docu",
+    description: "Exploring the rapid transformation of Addis Ababa through the eyes of its young visionaries.",
+    image: "https://images.unsplash.com/photo-1523213139764-415255943bbe?auto=format&fit=crop&q=80&w=1200",
+    videoUrl: "https://www.youtube.com/watch?v=O_zG_G9WqWk"
+  },
+   {
+    id: 404,
     title: "Addis Tomorrow",
     category: "Urban Docu",
     description: "Exploring the rapid transformation of Addis Ababa through the eyes of its young visionaries.",
