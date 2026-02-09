@@ -1,6 +1,6 @@
 
 import React, { useState, useRef } from 'react';
-import { works, movieWorks, conferenceWorks, musicWorks, documentaryWorks } from '../constants';
+import { works, movieWorks, conferenceWorks, musicWorks, documentaryWorks, eventWorks, commercialWorks } from '../constants';
 import PlayIcon from './icons/PlayIcon';
 
 const getYouTubeId = (url: string) => {
@@ -15,6 +15,7 @@ const VideoCard: React.FC<{
   layout?: 'portrait' | 'landscape' 
 }> = ({ item, index, layout = 'portrait' }) => {
   const [isPlaying, setIsPlaying] = useState(false);
+  const [imgError, setImgError] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
   
   const youTubeId = getYouTubeId(item.videoUrl);
@@ -39,14 +40,20 @@ const VideoCard: React.FC<{
   const aspectRatioClass = isLandscape ? 'aspect-[16/9]' : 'aspect-[9/16]';
   const revealClass = index % 2 === 0 ? 'reveal-left' : 'reveal-right';
 
+  // Fallback high-quality cinematic image if local path is wrong
+  const displayImage = imgError 
+    ? "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&q=80&w=1200" 
+    : item.image;
+
   return (
     <div className={`${revealClass} group relative overflow-hidden rounded-[2.5rem] md:rounded-[4rem] ${aspectRatioClass} bg-black shadow-3xl border border-white/5 transition-all duration-700 hover:border-yellow-500/40 perspective-card`}>
       {/* Thumbnail Layer */}
       {!isPlaying && (
         <img 
-          src={item.image} 
+          src={displayImage} 
           alt={item.title} 
-          className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-70 group-hover:opacity-30 z-0" 
+          onError={() => setImgError(true)}
+          className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-100 group-hover:opacity-40 z-0" 
         />
       )}
       
@@ -73,8 +80,8 @@ const VideoCard: React.FC<{
         />
       )}
 
-      {/* Cinematic Gradient / Info Layer */}
-      <div className={`absolute inset-0 bg-gradient-to-t from-black via-black/10 to-transparent transition-opacity duration-700 ${isPlaying ? 'opacity-0 pointer-events-none' : 'opacity-80'}`}></div>
+      {/* Cinematic Gradient / Info Layer - Refined for better image visibility */}
+      <div className={`absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent transition-opacity duration-700 ${isPlaying ? 'opacity-0 pointer-events-none' : 'opacity-70'}`}></div>
 
       <div className={`absolute inset-x-8 md:inset-x-12 bottom-8 md:bottom-12 transition-all duration-700 ${isPlaying ? 'translate-y-20 opacity-0 pointer-events-none' : 'translate-y-0 opacity-100'}`}>
         <span className="text-yellow-500 text-[9px] md:text-[10px] font-black tracking-[0.4em] uppercase mb-4 px-5 py-2 md:px-6 md:py-2 bg-black/60 backdrop-blur-xl rounded-full w-fit border border-white/10 block">
@@ -199,6 +206,49 @@ const Works: React.FC = () => {
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 max-w-7xl mx-auto">
           {documentaryWorks.map((item, idx) => (
+            <VideoCard key={item.id} item={item} index={idx} layout="landscape" />
+          ))}
+        </div>
+      </div>
+      
+
+      {/* SECTION 6: EVENT MASTERY (Horizontal) - NEW SECTION */}
+      <div className="container mx-auto px-6">
+        <div className="flex flex-col md:flex-row-reverse justify-between items-end mb-16 md:mb-24 gap-8 reveal">
+          <div className="max-w-2xl md:text-right">
+            <span className="text-yellow-500 font-black tracking-[0.5em] uppercase mb-6 md:mb-8 block text-xs md:text-right">Continental Impact</span>
+            <h2 className="text-5xl md:text-9xl font-black uppercase tracking-tighter leading-none">
+              <span className="text-mask"><span>EVENT</span></span> <br/>
+              <span className="text-mask" style={{ transitionDelay: '0.2s' }}><span className="gradient-text">MASTERY</span></span>
+            </h2>
+          </div>
+          <p className="max-w-md text-gray-500 text-lg md:text-xl font-light italic leading-relaxed text-left">
+            From high-energy galas to massive industry expos, we capture the atmosphere of excellence.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 max-w-7xl mx-auto">
+          {eventWorks.map((item, idx) => (
+            <VideoCard key={item.id} item={item} index={idx} layout="landscape" />
+          ))}
+        </div>
+      </div>
+
+       {/* SECTION 5: COMMERCIAL (Horizontal) */}
+      <div className="container mx-auto px-6">
+        <div className="flex flex-col md:flex-row justify-between items-end mb-16 md:mb-24 gap-8 reveal">
+          <div className="max-w-2xl">
+            <span className="text-yellow-500 font-black tracking-[0.5em] uppercase mb-6 md:mb-8 block text-xs">Cinematic Branding & Visual Storytelling</span>
+            <h2 className="text-5xl md:text-9xl font-black uppercase tracking-tighter leading-none">
+              <span className="text-mask"><span>COMMERCIAL</span></span> <br/>
+              <span className="text-mask" style={{ transitionDelay: '0.2s' }}><span className="gradient-text">CLIP</span></span>
+            </h2>
+          </div>
+          <p className="max-w-md text-gray-500 text-lg md:text-xl font-light italic leading-relaxed md:text-right">
+            Showcasing brands with cinematic flair and compelling narratives.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 max-w-7xl mx-auto">
+          {commercialWorks.map((item, idx) => (
             <VideoCard key={item.id} item={item} index={idx} layout="landscape" />
           ))}
         </div>
