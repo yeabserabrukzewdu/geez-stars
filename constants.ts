@@ -18,9 +18,9 @@ export const pageHeroImages = {
     "https://res.cloudinary.com/dlfdjcuat/image/upload/v1770217128/Screenshot_2026-02-04_175834_v9ogcm.png",
   ],
   works: [
-    "https://res.cloudinary.com/dlfdjcuat/image/upload/v1770221557/Screenshot_2026-02-04_191204_s6hjh0.png",
-    "https://res.cloudinary.com/dlfdjcuat/image/upload/v1770221556/Screenshot_2026-02-04_191130_ze1bg1.png",
-    "https://res.cloudinary.com/dlfdjcuat/image/upload/v1770216522/Screenshot_2026-02-04_174807_bg6zbq.png",
+    "/sticky.webp",
+    "/header.webp",
+    "/about 3.webp",
   ],
   pricing: [
     "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=1920",
@@ -161,19 +161,19 @@ export const works = [
 export const movieWorks = [
   {
     id: 101,
-    title: "The Last Breath",
+    title: "yeqotun",
     category: "Local Cinema",
     description: "A gripping drama exploring the hidden corners of Addis nightlife. Award-winning color grading and cinematography.",
-    image: "https://res.cloudinary.com/dlfdjcuat/image/upload/v1770219058/hq720_uuwr1d.jpg",
+    image: "/movie 1.jpg",
     videoUrl: "https://youtu.be/xPuJkXVDXB8"
   },
   {
     id: 102,
-    title: "Addis Romance",
-    category: "Feature Film",
+    title: "fikr tech",
+    category: "Romantic Film",
     description: "A cinematic love letter to the capital. High-end production values meeting Hollywood standards in Ethiopia.",
-    image: "https://images.unsplash.com/photo-1492691523567-6170c24dac13?auto=format&fit=crop&q=80&w=1200",
-    videoUrl: "https://res.cloudinary.com/demo/video/upload/q_auto/sea_turtle.mp4"
+    image: "/movie 2.jpg",
+    videoUrl: "https://youtu.be/vwz-O_AzuWw"
   }
 ];
 
@@ -183,7 +183,7 @@ export const conferenceWorks = [
     title: "African Union Summit",
     category: "Conference Program",
     description: "Full multi-camera coverage and daily highlight reels for the 37th Ordinary Session of the AU.",
-    image: "https://res.cloudinary.com/dlfdjcuat/image/upload/v1770212531/0A3A2795_-_Copy_nfjash.webp",
+    image: "/home 3.webp",
     videoUrl: "https://youtu.be/KoQu3HtriOE?list=PLMXZnykev_RYNz9nBtf-BlU-L4Bx5P4HL"
   },
   {
@@ -191,25 +191,25 @@ export const conferenceWorks = [
     title: "Tech Innovation Forum",
     category: "Summit / Event",
     description: "Dynamic visual storytelling capturing the pulse of Africa's burgeoning tech ecosystem.",
-    image: "https://images.unsplash.com/photo-1505373630103-821c7023230c?auto=format&fit=crop&q=80&w=1200",
+    image: "/works 7.webp",
     videoUrl: "https://res.cloudinary.com/demo/video/upload/q_auto/docs_vertical_video.mp4"
   }
 ];
 export const musicWorks = [
   {
     id: 301,
-    title: "Urban Rhythm",
+    title: "AWAKI",
     category: "Music Video",
     description: "Visualizing the pulse of the city through high-speed transitions and rhythmic editing.",
-    image: "https://res.cloudinary.com/dlfdjcuat/image/upload/v1770219687/maxresdefault_sptvxh.jpg",
+    image: "/clip 1.jpg",
     videoUrl: "https://youtu.be/TnGbT6MuOag"
   },
   {
     id: 302,
-    title: "Soul Session",
+    title: "BYE",
     category: "Acoustic Clip",
     description: "An intimate cinematic capture of a live soulful performance in our HQ studio.",
-    image: "https://res.cloudinary.com/dlfdjcuat/image/upload/v1770219686/hqdefault_xm2mes.jpg",
+    image: "/clip 2.jpg",
     videoUrl: "https://youtu.be/MUnlPHZ3dQc?list=PLc0bTHzecjFFFCbToA5S4pH8uGST9jdnW"
   }
 ];
@@ -220,7 +220,7 @@ export const documentaryWorks = [
     title: "The Coffee Origin",
     category: "Documentary",
     description: "A deep dive into the heritage of Ethiopian coffee, from wild forests to global cups. High-end visual ethnography.",
-    image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=1200",
+    image: "./documentry 1.webp",
     videoUrl: "https://www.youtube.com/watch?v=vV_X1oK_9gM"
   },
   {
@@ -228,7 +228,7 @@ export const documentaryWorks = [
     title: "Addis Tomorrow",
     category: "Urban Docu",
     description: "Exploring the rapid transformation of Addis Ababa through the eyes of its young visionaries.",
-    image: "https://images.unsplash.com/photo-1523213139764-415255943bbe?auto=format&fit=crop&q=80&w=1200",
+    image: "./documentry 2.webp",
     videoUrl: "https://www.youtube.com/watch?v=O_zG_G9WqWk"
   },
    {
@@ -236,7 +236,7 @@ export const documentaryWorks = [
     title: "Addis Tomorrow",
     category: "Urban Docu",
     description: "Exploring the rapid transformation of Addis Ababa through the eyes of its young visionaries.",
-    image: "https://images.unsplash.com/photo-1523213139764-415255943bbe?auto=format&fit=crop&q=80&w=1200",
+    image: "./documentry 3.webp",
     videoUrl: "https://www.youtube.com/watch?v=O_zG_G9WqWk"
   },
    {
@@ -246,6 +246,76 @@ export const documentaryWorks = [
     description: "Exploring the rapid transformation of Addis Ababa through the eyes of its young visionaries.",
     image: "https://images.unsplash.com/photo-1523213139764-415255943bbe?auto=format&fit=crop&q=80&w=1200",
     videoUrl: "https://www.youtube.com/watch?v=O_zG_G9WqWk"
+  }
+];
+
+export const eventWorks = [
+  {
+    id: 501,
+    title: "Global Tech Expo",
+    category: "Event Coverage",
+    description: "Multi-camera cinematic coverage for the year's biggest innovation gathering.",
+    image: "https://images.unsplash.com/photo-1540575861501-7cf05a4b125a?auto=format&fit=crop&q=80&w=1200",
+    videoUrl: "https://www.youtube.com/watch?v=f-N7A-OToi0"
+  },
+  {
+    id: 502,
+    title: "Grand Gala 2024",
+    category: "Event Highlights",
+    description: "Capturing the elegance and prestige of the annual charity gala in high-speed cinematic slow-motion.",
+    image: "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&q=80&w=1200",
+    videoUrl: "https://www.youtube.com/watch?v=NpEaa2P7qZI"
+  },
+  {
+    id: 503,
+    title: "Fashion Week Addis",
+    category: "Event Story",
+    description: "A high-energy visual journey through the most vibrant runway in East Africa.",
+    image: "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&q=80&w=1200",
+    videoUrl: "https://www.youtube.com/watch?v=kYv_62n6tM4"
+  },
+  {
+    id: 504,
+    title: "Innovation Summit",
+    category: "Conference Reel",
+    description: "Daily highlight reels and impactful visual summaries for leading corporate visionaries.",
+    image: "https://images.unsplash.com/photo-1505373630103-821c7023230c?auto=format&fit=crop&q=80&w=1200",
+    videoUrl: "https://www.youtube.com/watch?v=0pThnRne27A"
+  }
+];
+
+export const commercialWorks = [
+  {
+    id: 501,
+    title: "Global Tech Expo",
+    category: "Event Coverage",
+    description: "Multi-camera cinematic coverage for the year's biggest innovation gathering.",
+    image: "https://images.unsplash.com/photo-1540575861501-7cf05a4b125a?auto=format&fit=crop&q=80&w=1200",
+    videoUrl: "https://www.youtube.com/watch?v=f-N7A-OToi0"
+  },
+  {
+    id: 502,
+    title: "Grand Gala 2024",
+    category: "Event Highlights",
+    description: "Capturing the elegance and prestige of the annual charity gala in high-speed cinematic slow-motion.",
+    image: "/documentry 3.webp",
+    videoUrl: "https://www.youtube.com/watch?v=NpEaa2P7qZI"
+  },
+  {
+    id: 503,
+    title: "Fashion Week Addis",
+    category: "Event Story",
+    description: "A high-energy visual journey through the most vibrant runway in East Africa.",
+    image: "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&q=80&w=1200",
+    videoUrl: "https://www.youtube.com/watch?v=kYv_62n6tM4"
+  },
+  {
+    id: 504,
+    title: "Innovation Summit",
+    category: "Conference Reel",
+    description: "Daily highlight reels and impactful visual summaries for leading corporate visionaries.",
+    image: "https://images.unsplash.com/photo-1505373630103-821c7023230c?auto=format&fit=crop&q=80&w=1200",
+    videoUrl: "https://www.youtube.com/watch?v=0pThnRne27A"
   }
 ];
 
@@ -317,7 +387,14 @@ export const clients = [
   { name: "Safaricom", logo: "./05.png" },
   { name: "Commercial Bank", logo: "./06.png" },
   { name: "Berbera Port", logo: "./07.png" },
-  { name: "Creative Hub", logo: "./08.png" }
+  { name: "Creative Hub", logo: "./08.png" },
+  { name: "Dashen Bank", logo: "./09.png" },
+  { name: "Save The Children", logo: "./10.png" },
+  { name: "GIZ", logo: "./15.webp" },
+  { name: "Kuriftu Resorts", logo: "./12.png" },
+  { name: "Hybrid Designs", logo: "./13.jpg" },
+  { name: "Addis Ababa City", logo: "./14.png" }
+
 ];
 
 export const stats = [
