@@ -269,44 +269,77 @@ const ContactPage = () => (
     <PageHero title="LET'S CONNECT" subtitle="The Beginning" images={pageHeroImages.contact} theme="purple" />
     <section className="py-20 md:py-32 bg-black">
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-32">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-24 items-center">
           <div className="reveal-left">
-            <h1 className="text-5xl sm:text-6xl md:text-[11rem] font-black mb-8 md:mb-20 uppercase leading-[0.8] tracking-tighter">IGNITE <br/>YOUR <br/><span className="gradient-text">BRAND.</span></h1>
-            <div className="space-y-8 md:space-y-20 reveal-stagger">
-              <div className="flex items-center space-x-6 md:space-x-12 group">
-                <div className="w-16 h-16 md:w-28 md:h-28 glass rounded-[1.5rem] md:rounded-[3rem] flex items-center justify-center text-2xl md:text-5xl group-hover:scale-110 transition-all duration-700">📍</div>
+            <span className="text-purple-500 font-black tracking-[0.5em] uppercase mb-6 md:mb-8 block text-[10px]">Direct Outreach</span>
+            <h1 className="text-5xl sm:text-6xl md:text-8xl font-black mb-8 md:mb-16 uppercase leading-[0.9] tracking-tighter">
+              SCALE <br/>YOUR <br/><span className="gradient-text">LEGACY.</span>
+            </h1>
+            
+            <div className="space-y-6 md:space-y-10 reveal-stagger">
+              <div className="flex items-center space-x-6 group">
+                <div className="w-16 h-16 md:w-20 md:h-20 bg-white/5 border border-white/10 rounded-2xl md:rounded-3xl flex items-center justify-center text-2xl group-hover:bg-purple-500 group-hover:text-white transition-all duration-500">📍</div>
                 <div>
-                  <h4 className="font-black text-white text-xl md:text-3xl uppercase tracking-widest mb-1 md:mb-2">HQ Studio</h4>
-                  <p className="text-gray-500 text-sm md:text-xl">Bole KKare, Addis Ababa</p>
+                  <h4 className="font-black text-gray-500 text-[10px] uppercase tracking-widest mb-1">Our Studio</h4>
+                  <p className="text-white text-base md:text-lg font-bold">Bole KKare, Addis Ababa</p>
                 </div>
               </div>
-              <div className="flex items-center space-x-6 md:space-x-12 group">
-                <div className="w-16 h-16 md:w-28 md:h-28 glass rounded-[1.5rem] md:rounded-[3rem] flex items-center justify-center text-2xl md:text-5xl group-hover:scale-110 group-hover:rotate-12 transition-all duration-700">⚡</div>
+              
+              <div className="flex items-center space-x-6 group">
+                <div className="w-16 h-16 md:w-20 md:h-20 bg-white/5 border border-white/10 rounded-2xl md:rounded-3xl flex items-center justify-center text-2xl group-hover:bg-yellow-500 group-hover:text-black transition-all duration-500">📱</div>
                 <div>
-                  <h4 className="font-black text-white text-xl md:text-3xl uppercase tracking-widest mb-1 md:mb-2">Direct</h4>
-                  <p className="text-yellow-500 font-black text-xl md:text-4xl tracking-tighter">+251 92 298 1639</p>
+                  <h4 className="font-black text-gray-500 text-[10px] uppercase tracking-widest mb-1">24/7 Hotline</h4>
+                  <p className="text-white text-base md:text-lg font-bold">+251 92 298 1639</p>
+                </div>
+              </div>
+
+              <div className="flex items-center space-x-6 group">
+                <div className="w-16 h-16 md:w-20 md:h-20 bg-white/5 border border-white/10 rounded-2xl md:rounded-3xl flex items-center justify-center text-2xl group-hover:bg-orange-500 group-hover:text-white transition-all duration-500">📧</div>
+                <div>
+                  <h4 className="font-black text-gray-500 text-[10px] uppercase tracking-widest mb-1">Email</h4>
+                  <p className="text-white text-base md:text-lg font-bold">geezdigitals@gmail.com</p>
                 </div>
               </div>
             </div>
           </div>
           
           <div className="reveal-right">
-            <div className="glass p-8 md:p-20 rounded-[2rem] md:rounded-[6rem] border border-white/5 shadow-[0_50px_100px_rgba(0,0,0,0.5)]">
-              <form className="space-y-6 md:space-y-12" onSubmit={(e) => e.preventDefault()}>
-                <div className="space-y-3 md:space-y-6">
-                  <label className="text-[9px] font-black uppercase tracking-[0.4em] text-gray-500 ml-4 md:ml-6">Full Name</label>
-                  <input type="text" placeholder="Your Name" className="w-full bg-white/5 border border-white/10 p-5 md:p-10 rounded-[1.5rem] md:rounded-[3rem] text-white outline-none focus:border-yellow-500 focus:bg-white/10 transition-all text-base md:text-xl" />
+            <div className="glass p-8 md:p-12 rounded-[2rem] md:rounded-[3rem] border border-white/10 shadow-3xl relative overflow-hidden group/form">
+              {/* Subtle accent line */}
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-purple-500 via-yellow-500 to-orange-500 opacity-50"></div>
+              
+              <h3 className="text-xl md:text-2xl font-black text-white mb-8 md:mb-12 uppercase tracking-tight">Project Inquiry</h3>
+              
+              <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+                <div className="space-y-2">
+                  <label className="text-[10px] font-black uppercase tracking-[0.3em] text-gray-500 ml-2">Full Name</label>
+                  <input 
+                    type="text" 
+                    placeholder="E.g. Alexander Walker" 
+                    className="w-full bg-white/5 border border-white/10 p-4 md:p-5 rounded-2xl text-white outline-none focus:border-purple-500/50 focus:bg-white/10 transition-all text-sm" 
+                  />
                 </div>
-                <div className="space-y-3 md:space-y-6">
-                  <label className="text-[9px] font-black uppercase tracking-[0.4em] text-gray-500 ml-4 md:ml-6">Email Address</label>
-                  <input type="email" placeholder="hello@brand.com" className="w-full bg-white/5 border border-white/10 p-5 md:p-10 rounded-[1.5rem] md:rounded-[3rem] text-white outline-none focus:border-yellow-500 focus:bg-white/10 transition-all text-base md:text-xl" />
+                
+                <div className="space-y-2">
+                  <label className="text-[10px] font-black uppercase tracking-[0.3em] text-gray-500 ml-2">Email Address</label>
+                  <input 
+                    type="email" 
+                    placeholder="alex@company.com" 
+                    className="w-full bg-white/5 border border-white/10 p-4 md:p-5 rounded-2xl text-white outline-none focus:border-purple-500/50 focus:bg-white/10 transition-all text-sm" 
+                  />
                 </div>
-                <div className="space-y-3 md:space-y-6">
-                  <label className="text-[9px] font-black uppercase tracking-[0.4em] text-gray-500 ml-4 md:ml-6">The Brief</label>
-                  <textarea placeholder="Describe your cinematic vision..." rows={3} className="w-full bg-white/5 border border-white/10 p-5 md:p-10 rounded-[1.5rem] md:rounded-[3rem] text-white outline-none focus:border-yellow-500 focus:bg-white/10 transition-all text-base md:text-xl"></textarea>
+                
+                <div className="space-y-2">
+                  <label className="text-[10px] font-black uppercase tracking-[0.3em] text-gray-500 ml-2">The Vision</label>
+                  <textarea 
+                    placeholder="Tell us about your next project..." 
+                    rows={4} 
+                    className="w-full bg-white/5 border border-white/10 p-4 md:p-5 rounded-2xl text-white outline-none focus:border-purple-500/50 focus:bg-white/10 transition-all text-sm resize-none"
+                  ></textarea>
                 </div>
-                <button className="w-full py-5 md:py-10 bg-yellow-500 text-black font-black rounded-[1.5rem] md:rounded-[3rem] hover:scale-105 active:scale-95 transition-all uppercase tracking-[0.4em] text-base md:text-xl shadow-2xl shadow-yellow-500/20">
-                  Ignite Now
+                
+                <button className="w-full py-4 md:py-5 bg-white text-black font-black rounded-2xl hover:bg-yellow-500 transition-all uppercase tracking-[0.3em] text-xs md:text-sm shadow-xl shadow-black/40 mt-4 active:scale-95 group-hover/form:shadow-purple-500/10">
+                  Submit Proposal
                 </button>
               </form>
             </div>
@@ -317,6 +350,7 @@ const ContactPage = () => (
     <Map />
   </div>
 );
+
 
 const App: React.FC = () => {
   const [currentPath, setCurrentPath] = useState(window.location.hash || '#home');

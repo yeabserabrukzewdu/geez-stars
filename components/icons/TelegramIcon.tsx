@@ -2,9 +2,9 @@
 import React from 'react';
 
 const TelegramIcon: React.FC<{ className?: string }> = ({ className }) => (
-    <svg className={className} fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm4.243 6.343l-1.46 6.891c-.131.618-.5.772-1.002.48l-2.2-1.617-1.066 1.026c-.119.119-.219.219-.438.219l.159-2.245 4.145-3.753c.18-.159-.04-.249-.299-.08l-5.11 3.223-2.23-.696c-.618-.18-.636-.598.131-.877l8.411-3.273c.518-.18.966.119.814.798z" />
-    </svg>
+  <svg className={className} fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M20.665 3.717l-17.73 6.837c-1.213.486-1.203 1.163-.222 1.467l4.552 1.42 1.588 4.854c.191.53.095.74.675.74.45 0 .65-.205.9-.454l2.16-2.094 4.49 3.32c.825.455 1.42.22 1.625-.765l2.943-13.89c.3-1.2-.45-1.725-1.238-1.378z" />
+  </svg>
 );
 
 export default TelegramIcon;

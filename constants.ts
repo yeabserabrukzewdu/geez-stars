@@ -23,7 +23,7 @@ export const pageHeroImages = {
     "/about 3.webp",
   ],
   pricing: [
-    "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=1920",
+    "",
     "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=1920",
   ],
   team: [
@@ -111,7 +111,7 @@ export const services = [
 export const works = [
   {
     id: 1,
-    title: "YUSRA TRAVEL ADS",
+    title: "",
     category: "TikTok / Viral",
     description: "Local Tour And Travel Agency edits that captured over 500k views in the first week.",
     image: "./works 3.webp",
@@ -119,7 +119,7 @@ export const works = [
   },
   {
     id: 2,
-    title: "DE POWER COSMIC",
+    title: "",
     category: "Reels / COSMEX",
     description: "Well Known Cosmetics industries in Addis, designed for maximum engagement.",
     image: "./works 2.webp",
@@ -127,7 +127,7 @@ export const works = [
   },
   {
     id: 3,
-  title: "GEEZ JOBS SHOWREEL",
+  title: "",
   category: "JOB APPLICATIONS / FREELANCE",
     description: "A showcase of our most successful job application videos and freelance projects.",
     image: "./works 6.webp",
@@ -135,7 +135,7 @@ export const works = [
   },
   {
     id: 4,
-    title: "WE GLOW SPA",
+    title: "",
     category: "Skin care / Massage",
     description: "A relaxing and visually soothing promotional video for a local spa and wellness center.",
     image: "./works 1.webp",
@@ -143,7 +143,7 @@ export const works = [
   },
   {
     id: 5,
-    title: "LE YU HAIR SALON",
+    title: "",
     category: "Human hair / TikTok sales",
     description: "A trendy and engaging video to promote hair products on TikTok, driving significant sales.",
     image: "./works 5.webp",
@@ -151,7 +151,7 @@ export const works = [
   },
   {
     id: 6,
-    title: "KEMESHA BARISTA ACADEMY",
+    title: "",
     category: "Coffee / Reels",
     description: "A dynamic promotional video for a barista training academy, highlighting their courses and facilities.",
     image: "./works 4.webp",
@@ -161,7 +161,7 @@ export const works = [
 export const movieWorks = [
   {
     id: 101,
-    title: "yeqotun",
+    title: "",
     category: "Local Cinema",
     description: "A gripping drama exploring the hidden corners of Addis nightlife. Award-winning color grading and cinematography.",
     image: "/movie 1.jpg",
@@ -169,7 +169,7 @@ export const movieWorks = [
   },
   {
     id: 102,
-    title: "fikr tech",
+    title: "",
     category: "Romantic Film",
     description: "A cinematic love letter to the capital. High-end production values meeting Hollywood standards in Ethiopia.",
     image: "/movie 2.jpg",
@@ -180,7 +180,7 @@ export const movieWorks = [
 export const conferenceWorks = [
   {
     id: 201,
-    title: "African Union Summit",
+    title: "",
     category: "Conference Program",
     description: "Full multi-camera coverage and daily highlight reels for the 37th Ordinary Session of the AU.",
     image: "/home 3.webp",
@@ -188,7 +188,7 @@ export const conferenceWorks = [
   },
   {
     id: 202,
-    title: "Tech Innovation Forum",
+    title: "",
     category: "Summit / Event",
     description: "Dynamic visual storytelling capturing the pulse of Africa's burgeoning tech ecosystem.",
     image: "/works 7.webp",
@@ -198,7 +198,7 @@ export const conferenceWorks = [
 export const musicWorks = [
   {
     id: 301,
-    title: "AWAKI",
+    title: "",
     category: "Music Video",
     description: "Visualizing the pulse of the city through high-speed transitions and rhythmic editing.",
     image: "/clip 1.jpg",
@@ -206,10 +206,26 @@ export const musicWorks = [
   },
   {
     id: 302,
-    title: "BYE",
-    category: "Acoustic Clip",
+    title: "",
+    category: "Music Video",
     description: "An intimate cinematic capture of a live soulful performance in our HQ studio.",
     image: "/clip 2.jpg",
+    videoUrl: "https://youtu.be/MUnlPHZ3dQc?list=PLc0bTHzecjFFFCbToA5S4pH8uGST9jdnW"
+  },
+  {
+    id: 303,
+    title: "",
+    category: "Commercial Clip",
+    description: "Visualizing the pulse of the city through high-speed transitions and rhythmic editing.",
+    image: "/documentry 3.webp",
+    videoUrl: "https://youtu.be/TnGbT6MuOag"
+  },
+  {
+    id: 304,
+    title: "",
+    category: "Music Clip",
+    description: "An intimate cinematic capture of a live soulful performance in our HQ studio.",
+    image: "/22.jpg",
     videoUrl: "https://youtu.be/MUnlPHZ3dQc?list=PLc0bTHzecjFFFCbToA5S4pH8uGST9jdnW"
   }
 ];
@@ -217,15 +233,15 @@ export const musicWorks = [
 export const documentaryWorks = [
   {
     id: 401,
-    title: "The Coffee Origin",
+    title: "",
     category: "Documentary",
     description: "A deep dive into the heritage of Ethiopian coffee, from wild forests to global cups. High-end visual ethnography.",
-    image: "./documentry 1.webp",
+    image: "/documentry6.webp",
     videoUrl: "https://www.youtube.com/watch?v=vV_X1oK_9gM"
   },
   {
     id: 402,
-    title: "Addis Tomorrow",
+    title: "",
     category: "Urban Docu",
     description: "Exploring the rapid transformation of Addis Ababa through the eyes of its young visionaries.",
     image: "./documentry 2.webp",
@@ -233,18 +249,18 @@ export const documentaryWorks = [
   },
    {
     id: 403,
-    title: "Addis Tomorrow",
+    title: "",
     category: "Urban Docu",
     description: "Exploring the rapid transformation of Addis Ababa through the eyes of its young visionaries.",
-    image: "./documentry 3.webp",
+    image: "/documentry5.webp",
     videoUrl: "https://www.youtube.com/watch?v=O_zG_G9WqWk"
   },
    {
     id: 404,
-    title: "Addis Tomorrow",
+    title: "",
     category: "Urban Docu",
     description: "Exploring the rapid transformation of Addis Ababa through the eyes of its young visionaries.",
-    image: "https://images.unsplash.com/photo-1523213139764-415255943bbe?auto=format&fit=crop&q=80&w=1200",
+    image: "/21.jpg",
     videoUrl: "https://www.youtube.com/watch?v=O_zG_G9WqWk"
   }
 ];
@@ -252,23 +268,23 @@ export const documentaryWorks = [
 export const eventWorks = [
   {
     id: 501,
-    title: "Global Tech Expo",
+    title: "",
     category: "Event Coverage",
     description: "Multi-camera cinematic coverage for the year's biggest innovation gathering.",
-    image: "https://images.unsplash.com/photo-1540575861501-7cf05a4b125a?auto=format&fit=crop&q=80&w=1200",
+    image: "/20.webp",
     videoUrl: "https://www.youtube.com/watch?v=f-N7A-OToi0"
   },
   {
     id: 502,
-    title: "Grand Gala 2024",
+    title: "",
     category: "Event Highlights",
     description: "Capturing the elegance and prestige of the annual charity gala in high-speed cinematic slow-motion.",
-    image: "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&q=80&w=1200",
+    image: "/event 2.webp",
     videoUrl: "https://www.youtube.com/watch?v=NpEaa2P7qZI"
   },
   {
     id: 503,
-    title: "Fashion Week Addis",
+    title: "",
     category: "Event Story",
     description: "A high-energy visual journey through the most vibrant runway in East Africa.",
     image: "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&q=80&w=1200",
@@ -276,7 +292,7 @@ export const eventWorks = [
   },
   {
     id: 504,
-    title: "Innovation Summit",
+    title: "",
     category: "Conference Reel",
     description: "Daily highlight reels and impactful visual summaries for leading corporate visionaries.",
     image: "https://images.unsplash.com/photo-1505373630103-821c7023230c?auto=format&fit=crop&q=80&w=1200",
@@ -284,40 +300,6 @@ export const eventWorks = [
   }
 ];
 
-export const commercialWorks = [
-  {
-    id: 501,
-    title: "Global Tech Expo",
-    category: "Event Coverage",
-    description: "Multi-camera cinematic coverage for the year's biggest innovation gathering.",
-    image: "https://images.unsplash.com/photo-1540575861501-7cf05a4b125a?auto=format&fit=crop&q=80&w=1200",
-    videoUrl: "https://www.youtube.com/watch?v=f-N7A-OToi0"
-  },
-  {
-    id: 502,
-    title: "Grand Gala 2024",
-    category: "Event Highlights",
-    description: "Capturing the elegance and prestige of the annual charity gala in high-speed cinematic slow-motion.",
-    image: "/documentry 3.webp",
-    videoUrl: "https://www.youtube.com/watch?v=NpEaa2P7qZI"
-  },
-  {
-    id: 503,
-    title: "Fashion Week Addis",
-    category: "Event Story",
-    description: "A high-energy visual journey through the most vibrant runway in East Africa.",
-    image: "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&q=80&w=1200",
-    videoUrl: "https://www.youtube.com/watch?v=kYv_62n6tM4"
-  },
-  {
-    id: 504,
-    title: "Innovation Summit",
-    category: "Conference Reel",
-    description: "Daily highlight reels and impactful visual summaries for leading corporate visionaries.",
-    image: "https://images.unsplash.com/photo-1505373630103-821c7023230c?auto=format&fit=crop&q=80&w=1200",
-    videoUrl: "https://www.youtube.com/watch?v=0pThnRne27A"
-  }
-];
 
 export const pricingPlans = [
   {
@@ -357,25 +339,25 @@ export const teamMembers = [
     name: "Abel Defar", 
     role: "VFX & Editor", 
     bio: "Wizard of motion graphics. Turning raw data into visual poetry.",
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=800"
+    image: "/2.webp"
   },
   { 
     name: "Ashenafi Mesfin", 
     role: "Creative Director", 
     bio: "The visionary eye. Orchestrating every frame for maximum impact.",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=800"
+    image: "/3.jpg"
   },
   { 
     name: "Milkeyas Haile", 
     role: "Director of Photography", 
     bio: "Master of light and shadow. Capturing the soul of every subject.",
-    image: "https://res.cloudinary.com/dlfdjcuat/image/upload/v1770288321/IMG_20250120_181046_153_vbc5i8.jpg"
+    image: "/mike.JPG"
   },
   { 
     name: "Fitsum Gebre", 
     role: "Script Writer & Strategist", 
     bio: "The tactical mind. Crafting stories that don't just speak—they sell.",
-    image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=800"
+    image: "/1.webp"
   },
 ];
 

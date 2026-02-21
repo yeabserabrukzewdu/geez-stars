@@ -1,6 +1,6 @@
 
 import React, { useState, useRef } from 'react';
-import { works, movieWorks, conferenceWorks, musicWorks, documentaryWorks, eventWorks, commercialWorks } from '../constants';
+import { works, movieWorks, conferenceWorks, musicWorks, documentaryWorks, eventWorks } from '../constants';
 import PlayIcon from './icons/PlayIcon';
 
 const getYouTubeId = (url: string) => {
@@ -154,12 +154,12 @@ const Works: React.FC = () => {
       </div>
 
       {/* SECTION 3: MUSIC CLIPS (Horizontal) */}
-      <div className="container mx-auto px-6">
-        <div className="flex flex-col md:flex-row-reverse justify-between items-end mb-16 md:mb-24 gap-8 reveal">
+       <div className="container mx-auto px-6">
+        <div className="text-center mb-16 md:mb-24 reveal">
           <div className="max-w-2xl md:text-right">
-            <span className="text-yellow-500 font-black tracking-[0.5em] uppercase mb-6 md:mb-8 block text-xs md:text-right">Visual Rhythms</span>
+            <span className="text-yellow-500 font-black tracking-[0.5em] uppercase mb-8 block text-xs">Visual Rhythms</span>
             <h2 className="text-5xl md:text-9xl font-black uppercase tracking-tighter leading-none">
-              <span className="text-mask"><span>MUSIC</span></span> <br/>
+              <span className="text-mask mr-16"><span>MUSIC & Commercial </span></span> <br/>
               <span className="text-mask" style={{ transitionDelay: '0.2s' }}><span className="gradient-text">CLIPS</span></span>
             </h2>
           </div>
@@ -234,25 +234,7 @@ const Works: React.FC = () => {
       </div>
 
        {/* SECTION 5: COMMERCIAL (Horizontal) */}
-      <div className="container mx-auto px-6">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-16 md:mb-24 gap-8 reveal">
-          <div className="max-w-2xl">
-            <span className="text-yellow-500 font-black tracking-[0.5em] uppercase mb-6 md:mb-8 block text-xs">Cinematic Branding & Visual Storytelling</span>
-            <h2 className="text-5xl md:text-9xl font-black uppercase tracking-tighter leading-none">
-              <span className="text-mask"><span>COMMERCIAL</span></span> <br/>
-              <span className="text-mask" style={{ transitionDelay: '0.2s' }}><span className="gradient-text">CLIP</span></span>
-            </h2>
-          </div>
-          <p className="max-w-md text-gray-500 text-lg md:text-xl font-light italic leading-relaxed md:text-right">
-            Showcasing brands with cinematic flair and compelling narratives.
-          </p>
-        </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 max-w-7xl mx-auto">
-          {commercialWorks.map((item, idx) => (
-            <VideoCard key={item.id} item={item} index={idx} layout="landscape" />
-          ))}
-        </div>
-      </div>
+      
 
       {/* FINAL CTA */}
       <div className="reveal py-16 md:py-24 text-center container mx-auto px-6">
