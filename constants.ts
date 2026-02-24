@@ -345,7 +345,7 @@ export const teamMembers = [
     name: "Ashenafi Mesfin", 
     role: "Creative Director", 
     bio: "The visionary eye. Orchestrating every frame for maximum impact.",
-    image: "/3.jpg"
+    image: "/3.png"
   },
   { 
     name: "Milkeyas Haile", 
