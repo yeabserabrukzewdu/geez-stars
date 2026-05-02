@@ -94,6 +94,9 @@ const Footer: React.FC = () => {
           <p className="text-sm font-bold uppercase tracking-widest">
             &copy; {new Date().getFullYear()} GEEZ DIGITALS. ALL RIGHTS RESERVED.
           </p>
+          <p className="text-[9px] font-black tracking-[0.4em] uppercase text-gray-500/60">
+              DEVELOPED BY <a href="https://semaysystems.com" target="_blank" rel="noopener noreferrer" className="text-yellow-500/80 hover:text-yellow-500 transition-colors">SEMAY SYSTEMS</a>
+            </p>
           <div className="flex space-x-8 text-xs font-bold uppercase tracking-widest">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>

@@ -287,8 +287,8 @@ export const eventWorks = [
     title: "",
     category: "Event Story",
     description: "A high-energy visual journey through the most vibrant runway in East Africa.",
-    image: "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&q=80&w=1200",
-    videoUrl: "https://www.youtube.com/watch?v=kYv_62n6tM4"
+    image: "/works 8.webp",
+    videoUrl: "https://res.cloudinary.com/dlfdjcuat/video/upload/v1777730009/ye_kokebu_sew_03_x0zuko.mp4"
   },
   {
     id: 504,
@@ -400,4 +400,62 @@ export const socialLinks = [
   { name: "TikTok", href: "#" },
   { name: "YouTube", href: "#" },
   { name: "Telegram", href: "https://t.me/geezdigitals" }
+];
+export const graphicDesignWorks = [
+  {
+    id: 601,
+    title: "Brand Identity: Nech",
+    category: "Branding",
+    description: "Minimalist and luxury brand identity for a high-end fashion house in Addis.",
+    image: "/g1.jpg",
+  },
+  {
+    id: 602,
+    title: "Eco Packaging",
+    category: "Packaging",
+    description: "Sustainable packaging design for local organic coffee roasters.",
+    image: "/g2.jpg",
+  },
+  {
+    id: 603,
+    title: "Digital Art Series",
+    category: "Digital Art",
+    description: "A series of digital illustrations celebrating Ethiopian cultural icons in a modern pop-art style.",
+    image: "/g3.jpg",
+  },
+  {
+    id: 604,
+    title: "Corporate Identity",
+    category: "Corporate",
+    description: "Complete visual rebranding for a leading fintech startup, emphasizing trust and innovation.",
+    image: "/g4.webp",
+  },
+  {
+    id: 605,
+    title: "Corporate Identity",
+    category: "Corporate",
+    description: "Complete visual rebranding for a leading fintech startup, emphasizing trust and innovation.",
+    image: "/g5.webp",
+  },
+  {
+    id: 606,
+    title: "Corporate Identity",
+    category: "Corporate",
+    description: "Complete visual rebranding for a leading fintech startup, emphasizing trust and innovation.",
+    image: "/g6.webp",
+  },
+  {
+    id: 607,
+    title: "Corporate Identity",
+    category: "Corporate",
+    description: "Complete visual rebranding for a leading fintech startup, emphasizing trust and innovation.",
+    image: "/g7.webp",
+  },
+  {
+    id: 608,
+    title: "Corporate Identity",
+    category: "Corporate",
+    description: "Complete visual rebranding for a leading fintech startup, emphasizing trust and innovation.",
+    image: "/g8.jpg",
+  }
 ];

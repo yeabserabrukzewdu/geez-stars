@@ -2,6 +2,7 @@
 import React, { useState, useRef } from 'react';
 import { works, movieWorks, conferenceWorks, musicWorks, documentaryWorks, eventWorks } from '../constants';
 import PlayIcon from './icons/PlayIcon';
+import GraphicShowcase from './GraphicShowcase';
 
 const getYouTubeId = (url: string) => {
   const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
@@ -234,7 +235,7 @@ const Works: React.FC = () => {
       </div>
 
        {/* SECTION 5: COMMERCIAL (Horizontal) */}
-      
+       <GraphicShowcase title="Digital Artistry" subtitle="Graphic Design & VFX" />
 
       {/* FINAL CTA */}
       <div className="reveal py-16 md:py-24 text-center container mx-auto px-6">

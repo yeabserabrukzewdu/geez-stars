@@ -13,6 +13,7 @@ import Footer from './components/Footer';
 import PageHero from './components/PageHero';
 import Map from './components/Map';
 import ChatWidget from './components/ChatWidget';
+import GraphicShowcase from './components/GraphicShowcase';
 import { 
   pricingPlans, 
   pageHeroImages,
@@ -157,6 +158,7 @@ const HomePage = () => {
             ))}
           </div>
         </section>
+        <GraphicShowcase isHome={true} title="Design Identity" subtitle="Modern Visual Systems" />
         
         <div className="space-y-0">
           <Clients />
